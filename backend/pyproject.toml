@@ -1,0 +1,29 @@
+[project]
+name = "fiado-facil"
+version = "0.1.0"
+description = "Sistema web para gerenciamento de vendas fiadas"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "psycopg[binary]",
+    "alembic",
+    "pydantic-settings",
+    "pyjwt",
+    "bcrypt",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "httpx",
+    "ruff",
+]
+
+[tool.ruff]
+line-lenght = 88
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

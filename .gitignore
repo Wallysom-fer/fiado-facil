@@ -1,0 +1,26 @@
+# python
+__pychace__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+#Node
+node_modules/
+dist/
+*.local
+
+# IDE
+.idea/
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
